@@ -11,13 +11,11 @@ public class ScoreView : MonoBehaviour
     private List<int> GetThrowsList()
     {
         List<int> throws = new List<int>();
-        throws.Clear();
         foreach (Transform child in scoreGameObject.transform)
         {
             DropdownValue dropdown = child.gameObject.GetComponent<DropdownValue>();
             throws.Add(dropdown.GetLabelValue());
         }
-
         return throws;
     }
 
