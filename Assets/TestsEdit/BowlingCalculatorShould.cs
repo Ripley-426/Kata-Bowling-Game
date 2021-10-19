@@ -20,7 +20,7 @@ namespace TestsEdit
             for (int i = 0; i < 12; i++)
             {
                 
-                throws.Add(12);
+                throws.Add(11);
             }
             //Act
             int result = _bc.CalculateScore(throws);
@@ -36,7 +36,7 @@ namespace TestsEdit
             for (int i = 0; i < 11; i++)
             {
                 
-                throws.Add(11);
+                throws.Add(10);
             }
             //Act
             int result = _bc.CalculateScore(throws);
@@ -80,12 +80,12 @@ namespace TestsEdit
             //Arrange
             List<int> throws = new List<int>
             {
-                5, 4, 10, 1, 12, 0, 11, 5, 12, 2, 3
+                5, 4, 10, 1, 11, 0, 10, 5, 11, 2, 3
             };
             //Act
             int result = _bc.CalculateScore(throws);
             //Assert
-            Assert.AreEqual(77, result);
+            Assert.AreEqual(78, result);
         }
     }
 }

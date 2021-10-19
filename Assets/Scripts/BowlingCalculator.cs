@@ -11,11 +11,11 @@ public class BowlingCalculator
             switch (throws[i])
             {
                 //Strike
-                case 12:
+                case 11:
                     score += 10 + Mathf.Min(throws[i + 1], 10) + Mathf.Min(throws[i + 2], 10);
                     break;
                 //Spare
-                case 11:
+                case 10:
                     score += 10 + Mathf.Min(throws[i + 1], 10);
                     break;
                 default:
