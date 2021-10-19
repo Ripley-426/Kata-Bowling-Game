@@ -25,7 +25,7 @@ public class BonusScoreController : MonoBehaviour
 
     private void Update()
     {
-        //11 = Spare | 12 = strike
+        //10 = Spare | 11 = strike
         if (_penultimateDropdown.GetLabelValue() == 11 || _lastDropdown.GetLabelValue() == 10 || _lastDropdown.GetLabelValue() == 11)
         {
             bonusScore1.SetActive(true);
