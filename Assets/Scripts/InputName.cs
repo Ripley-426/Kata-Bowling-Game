@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InputName : MonoBehaviour
 {
-    [SerializeField] private Text nameInput;
+    [SerializeField] private TMP_Text nameInput;
     [SerializeField] private Text nameLabel;
     [SerializeField] private Text errorLabel;
     [SerializeField] private GameObject playerNamePanel;
