@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85b449affc887749a02f61c3e828264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameInput: {fileID: 582596769}
+  nameInput: {fileID: 94545441}
   nameLabel: {fileID: 1474777359}
   errorLabel: {fileID: 1145986536}
   playerNamePanel: {fileID: 624262984}
