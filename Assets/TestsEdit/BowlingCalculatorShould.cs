@@ -13,6 +13,36 @@ namespace TestsEdit
         }
         
         [Test]
+        public void ReturnLowestScore()
+        {
+            //Arrange
+            List<int> throws = new List<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                
+                throws.Add(0);
+            }
+            //Act
+            int result = _bc.CalculateScore(throws);
+            //Assert
+            Assert.AreEqual(0, result);
+        }
+        
+        [Test]
+        public void CalculateScoreWithoutSparesOrStrikes()
+        {
+            //Arrange
+            List<int> throws = new List<int>
+            {
+                5, 4, 8, 1, 6, 0, 0, 5, 3, 2
+            };
+            //Act
+            int result = _bc.CalculateScore(throws);
+            //Assert
+            Assert.AreEqual(34, result);
+        }
+        
+        [Test]
         public void CalculateScoreWithStrikes()
         {
             //Arrange
@@ -44,36 +74,6 @@ namespace TestsEdit
             Assert.AreEqual(200, result);
         }
 
-        [Test]
-        public void ReturnLowestScore()
-        {
-            //Arrange
-            List<int> throws = new List<int>();
-            for (int i = 0; i < 10; i++)
-            {
-                
-                throws.Add(0);
-            }
-            //Act
-            int result = _bc.CalculateScore(throws);
-            //Assert
-            Assert.AreEqual(0, result);
-        }
-        
-        [Test]
-        public void CalculateScoreWithoutSparesOrStrikes()
-        {
-            //Arrange
-            List<int> throws = new List<int>
-            {
-                5, 4, 8, 1, 6, 0, 0, 5, 3, 2
-            };
-            //Act
-            int result = _bc.CalculateScore(throws);
-            //Assert
-            Assert.AreEqual(34, result);
-        }
-        
         [Test]
         public void CalculateScoreComplete()
         {
